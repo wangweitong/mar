@@ -1,22 +1,23 @@
 package com.mar.broadcast.alarm;
 
-import com.mar.model.JobHistory;
-import com.mar.model.JobStatus.TriggerType;
-import com.mar.model.ZeusFollow;
+import com.mar.model.*;
+
 import com.mar.schedule.mvc.JobFailListener.ChainException;
 import com.mar.store.FollowManagerOld;
 import com.mar.store.GroupManagerOld;
 import com.mar.store.JobHistoryManager;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.Logger;
+import org.slf4j.*;
+import org.slf4j.impl.Log4jLoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import parquet.org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbstractZeusAlarm implements ZeusAlarm{
-	protected static Logger log=LoggerFactory.getLogger(AbstractZeusAlarm.class);
+	protected static parquet.org.slf4j.Logger log=LoggerFactory.getLogger(AbstractZeusAlarm.class);
 	@Autowired
 	protected JobHistoryManager jobHistoryManager;
 	@Autowired
