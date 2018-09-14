@@ -1,12 +1,11 @@
 package com.mar.model;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
 import com.mar.model.JobStatus.Status;
 import com.mar.model.JobStatus.TriggerType;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 public class JobHistory{
 

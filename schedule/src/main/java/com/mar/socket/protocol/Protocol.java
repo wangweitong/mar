@@ -74,7 +74,7 @@ public final class Protocol {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:com.mar.socket.protocol.Status)
+    // @@protoc_insertion_point(enum_scope:com.com.mar.socket.protocol.Status)
   }
 
   public enum ExecuteKind
@@ -146,7 +146,7 @@ public final class Protocol {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:com.mar.socket.protocol.ExecuteKind)
+    // @@protoc_insertion_point(enum_scope:com.com.mar.socket.protocol.ExecuteKind)
   }
 
   public enum WebOperate
@@ -221,7 +221,7 @@ public final class Protocol {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:com.mar.socket.protocol.WebOperate)
+    // @@protoc_insertion_point(enum_scope:com.com.mar.socket.protocol.WebOperate)
   }
 
   public enum Operate
@@ -299,13 +299,13 @@ public final class Protocol {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:com.mar.socket.protocol.Operate)
+    // @@protoc_insertion_point(enum_scope:com.com.mar.socket.protocol.Operate)
   }
 
   public interface SocketMessageOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required .com.mar.socket.protocol.SocketMessage.Kind kind = 1;
+    // required .com.com.mar.socket.protocol.SocketMessage.Kind kind = 1;
     boolean hasKind();
     com.mar.socket.protocol.Protocol.SocketMessage.Kind getKind();
 
@@ -413,11 +413,11 @@ public final class Protocol {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:com.mar.socket.protocol.SocketMessage.Kind)
+      // @@protoc_insertion_point(enum_scope:com.com.mar.socket.protocol.SocketMessage.Kind)
     }
 
     private int bitField0_;
-    // required .com.mar.socket.protocol.SocketMessage.Kind kind = 1;
+    // required .com.com.mar.socket.protocol.SocketMessage.Kind kind = 1;
     public static final int KIND_FIELD_NUMBER = 1;
     private com.mar.socket.protocol.Protocol.SocketMessage.Kind kind_;
     public boolean hasKind() {
@@ -583,7 +583,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_SocketMessage_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.SocketMessage.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.SocketMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -731,7 +731,7 @@ public final class Protocol {
 
       private int bitField0_;
 
-      // required .com.mar.socket.protocol.SocketMessage.Kind kind = 1;
+      // required .com.com.mar.socket.protocol.SocketMessage.Kind kind = 1;
       private com.mar.socket.protocol.Protocol.SocketMessage.Kind kind_ = com.mar.socket.protocol.Protocol.SocketMessage.Kind.REQUEST;
       public boolean hasKind() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -779,7 +779,7 @@ public final class Protocol {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.SocketMessage)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.SocketMessage)
     }
 
     static {
@@ -787,7 +787,7 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.SocketMessage)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.SocketMessage)
   }
 
   public interface WebRequestOrBuilder
@@ -797,11 +797,11 @@ public final class Protocol {
     boolean hasRid();
     int getRid();
 
-    // required .com.mar.socket.protocol.WebOperate operate = 2;
+    // required .com.com.mar.socket.protocol.WebOperate operate = 2;
     boolean hasOperate();
     com.mar.socket.protocol.Protocol.WebOperate getOperate();
 
-    // required .com.mar.socket.protocol.ExecuteKind ek = 3;
+    // required .com.com.mar.socket.protocol.ExecuteKind ek = 3;
     boolean hasEk();
     com.mar.socket.protocol.Protocol.ExecuteKind getEk();
 
@@ -911,7 +911,7 @@ public final class Protocol {
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:com.mar.socket.protocol.WebRequest.Trigger)
+      // @@protoc_insertion_point(enum_scope:com.com.mar.socket.protocol.WebRequest.Trigger)
     }
 
     private int bitField0_;
@@ -925,7 +925,7 @@ public final class Protocol {
       return rid_;
     }
 
-    // required .com.mar.socket.protocol.WebOperate operate = 2;
+    // required .com.com.mar.socket.protocol.WebOperate operate = 2;
     public static final int OPERATE_FIELD_NUMBER = 2;
     private com.mar.socket.protocol.Protocol.WebOperate operate_;
     public boolean hasOperate() {
@@ -935,7 +935,7 @@ public final class Protocol {
       return operate_;
     }
 
-    // required .com.mar.socket.protocol.ExecuteKind ek = 3;
+    // required .com.com.mar.socket.protocol.ExecuteKind ek = 3;
     public static final int EK_FIELD_NUMBER = 3;
     private com.mar.socket.protocol.Protocol.ExecuteKind ek_;
     public boolean hasEk() {
@@ -1209,7 +1209,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_WebRequest_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.WebRequest.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.WebRequest.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1452,7 +1452,7 @@ public final class Protocol {
         return this;
       }
 
-      // required .com.mar.socket.protocol.WebOperate operate = 2;
+      // required .com.com.mar.socket.protocol.WebOperate operate = 2;
       private com.mar.socket.protocol.Protocol.WebOperate operate_ = com.mar.socket.protocol.Protocol.WebOperate.UpdateJob;
       public boolean hasOperate() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -1476,7 +1476,7 @@ public final class Protocol {
         return this;
       }
 
-      // required .com.mar.socket.protocol.ExecuteKind ek = 3;
+      // required .com.com.mar.socket.protocol.ExecuteKind ek = 3;
       private com.mar.socket.protocol.Protocol.ExecuteKind ek_ = com.mar.socket.protocol.Protocol.ExecuteKind.ScheduleKind;
       public boolean hasEk() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
@@ -1596,7 +1596,7 @@ public final class Protocol {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.WebRequest)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.WebRequest)
     }
 
     static {
@@ -1604,13 +1604,13 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.WebRequest)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.WebRequest)
   }
 
   public interface WebResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required .com.mar.socket.protocol.Status status = 1;
+    // required .com.com.mar.socket.protocol.Status status = 1;
     boolean hasStatus();
     com.mar.socket.protocol.Protocol.Status getStatus();
 
@@ -1618,7 +1618,7 @@ public final class Protocol {
     boolean hasRid();
     int getRid();
 
-    // required .com.mar.socket.protocol.WebOperate operate = 3;
+    // required .com.com.mar.socket.protocol.WebOperate operate = 3;
     boolean hasOperate();
     com.mar.socket.protocol.Protocol.WebOperate getOperate();
 
@@ -1659,7 +1659,7 @@ public final class Protocol {
     }
 
     private int bitField0_;
-    // required .com.mar.socket.protocol.Status status = 1;
+    // required .com.com.mar.socket.protocol.Status status = 1;
     public static final int STATUS_FIELD_NUMBER = 1;
     private com.mar.socket.protocol.Protocol.Status status_;
     public boolean hasStatus() {
@@ -1679,7 +1679,7 @@ public final class Protocol {
       return rid_;
     }
 
-    // required .com.mar.socket.protocol.WebOperate operate = 3;
+    // required .com.com.mar.socket.protocol.WebOperate operate = 3;
     public static final int OPERATE_FIELD_NUMBER = 3;
     private com.mar.socket.protocol.Protocol.WebOperate operate_;
     public boolean hasOperate() {
@@ -1909,7 +1909,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_WebResponse_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.WebResponse.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.WebResponse.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2113,7 +2113,7 @@ public final class Protocol {
 
       private int bitField0_;
 
-      // required .com.mar.socket.protocol.Status status = 1;
+      // required .com.com.mar.socket.protocol.Status status = 1;
       private com.mar.socket.protocol.Protocol.Status status_ = com.mar.socket.protocol.Protocol.Status.OK;
       public boolean hasStatus() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -2158,7 +2158,7 @@ public final class Protocol {
         return this;
       }
 
-      // required .com.mar.socket.protocol.WebOperate operate = 3;
+      // required .com.com.mar.socket.protocol.WebOperate operate = 3;
       private com.mar.socket.protocol.Protocol.WebOperate operate_ = com.mar.socket.protocol.Protocol.WebOperate.UpdateJob;
       public boolean hasOperate() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
@@ -2242,7 +2242,7 @@ public final class Protocol {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.WebResponse)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.WebResponse)
     }
 
     static {
@@ -2250,7 +2250,7 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.WebResponse)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.WebResponse)
   }
 
   public interface RequestOrBuilder
@@ -2260,7 +2260,7 @@ public final class Protocol {
     boolean hasRid();
     int getRid();
 
-    // required .com.mar.socket.protocol.Operate operate = 2;
+    // required .com.com.mar.socket.protocol.Operate operate = 2;
     boolean hasOperate();
     com.mar.socket.protocol.Protocol.Operate getOperate();
 
@@ -2307,7 +2307,7 @@ public final class Protocol {
       return rid_;
     }
 
-    // required .com.mar.socket.protocol.Operate operate = 2;
+    // required .com.com.mar.socket.protocol.Operate operate = 2;
     public static final int OPERATE_FIELD_NUMBER = 2;
     private com.mar.socket.protocol.Protocol.Operate operate_;
     public boolean hasOperate() {
@@ -2485,7 +2485,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_Request_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.Request.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.Request.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2672,7 +2672,7 @@ public final class Protocol {
         return this;
       }
 
-      // required .com.mar.socket.protocol.Operate operate = 2;
+      // required .com.com.mar.socket.protocol.Operate operate = 2;
       private com.mar.socket.protocol.Protocol.Operate operate_ = com.mar.socket.protocol.Protocol.Operate.HeartBeat;
       public boolean hasOperate() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -2720,7 +2720,7 @@ public final class Protocol {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.Request)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.Request)
     }
 
     static {
@@ -2728,13 +2728,13 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.Request)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.Request)
   }
 
   public interface ResponseOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required .com.mar.socket.protocol.Status status = 1;
+    // required .com.com.mar.socket.protocol.Status status = 1;
     boolean hasStatus();
     com.mar.socket.protocol.Protocol.Status getStatus();
 
@@ -2742,7 +2742,7 @@ public final class Protocol {
     boolean hasRid();
     int getRid();
 
-    // required .com.mar.socket.protocol.Operate operate = 3;
+    // required .com.com.mar.socket.protocol.Operate operate = 3;
     boolean hasOperate();
     com.mar.socket.protocol.Protocol.Operate getOperate();
 
@@ -2783,7 +2783,7 @@ public final class Protocol {
     }
 
     private int bitField0_;
-    // required .com.mar.socket.protocol.Status status = 1;
+    // required .com.com.mar.socket.protocol.Status status = 1;
     public static final int STATUS_FIELD_NUMBER = 1;
     private com.mar.socket.protocol.Protocol.Status status_;
     public boolean hasStatus() {
@@ -2803,7 +2803,7 @@ public final class Protocol {
       return rid_;
     }
 
-    // required .com.mar.socket.protocol.Operate operate = 3;
+    // required .com.com.mar.socket.protocol.Operate operate = 3;
     public static final int OPERATE_FIELD_NUMBER = 3;
     private com.mar.socket.protocol.Protocol.Operate operate_;
     public boolean hasOperate() {
@@ -3033,7 +3033,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_Response_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.Response.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.Response.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3237,7 +3237,7 @@ public final class Protocol {
 
       private int bitField0_;
 
-      // required .com.mar.socket.protocol.Status status = 1;
+      // required .com.com.mar.socket.protocol.Status status = 1;
       private com.mar.socket.protocol.Protocol.Status status_ = com.mar.socket.protocol.Protocol.Status.OK;
       public boolean hasStatus() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -3282,7 +3282,7 @@ public final class Protocol {
         return this;
       }
 
-      // required .com.mar.socket.protocol.Operate operate = 3;
+      // required .com.com.mar.socket.protocol.Operate operate = 3;
       private com.mar.socket.protocol.Protocol.Operate operate_ = com.mar.socket.protocol.Protocol.Operate.HeartBeat;
       public boolean hasOperate() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
@@ -3366,7 +3366,7 @@ public final class Protocol {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.Response)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.Response)
     }
 
     static {
@@ -3374,7 +3374,7 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.Response)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.Response)
   }
 
   public interface HeartBeatMessageOrBuilder
@@ -3741,7 +3741,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_HeartBeatMessage_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.HeartBeatMessage.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.HeartBeatMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4243,7 +4243,7 @@ public final class Protocol {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.HeartBeatMessage)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.HeartBeatMessage)
     }
 
     static {
@@ -4251,7 +4251,7 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.HeartBeatMessage)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.HeartBeatMessage)
   }
 
   public interface ExecuteMessageOrBuilder
@@ -4482,7 +4482,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_ExecuteMessage_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.ExecuteMessage.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.ExecuteMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4681,7 +4681,7 @@ public final class Protocol {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.ExecuteMessage)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.ExecuteMessage)
     }
 
     static {
@@ -4689,13 +4689,13 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.ExecuteMessage)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.ExecuteMessage)
   }
 
   public interface CancelMessageOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // required .com.mar.socket.protocol.ExecuteKind ek = 1;
+    // required .com.com.mar.socket.protocol.ExecuteKind ek = 1;
     boolean hasEk();
     com.mar.socket.protocol.Protocol.ExecuteKind getEk();
 
@@ -4732,7 +4732,7 @@ public final class Protocol {
     }
 
     private int bitField0_;
-    // required .com.mar.socket.protocol.ExecuteKind ek = 1;
+    // required .com.com.mar.socket.protocol.ExecuteKind ek = 1;
     public static final int EK_FIELD_NUMBER = 1;
     private com.mar.socket.protocol.Protocol.ExecuteKind ek_;
     public boolean hasEk() {
@@ -4924,7 +4924,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_CancelMessage_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.CancelMessage.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.CancelMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -5076,7 +5076,7 @@ public final class Protocol {
 
       private int bitField0_;
 
-      // required .com.mar.socket.protocol.ExecuteKind ek = 1;
+      // required .com.com.mar.socket.protocol.ExecuteKind ek = 1;
       private com.mar.socket.protocol.Protocol.ExecuteKind ek_ = com.mar.socket.protocol.Protocol.ExecuteKind.ScheduleKind;
       public boolean hasEk() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -5136,7 +5136,7 @@ public final class Protocol {
         onChanged();
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.CancelMessage)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.CancelMessage)
     }
 
     static {
@@ -5144,7 +5144,7 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.CancelMessage)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.CancelMessage)
   }
 
   public interface DebugMessageOrBuilder
@@ -5375,7 +5375,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_DebugMessage_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.DebugMessage.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.DebugMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -5574,7 +5574,7 @@ public final class Protocol {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.DebugMessage)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.DebugMessage)
     }
 
     static {
@@ -5582,7 +5582,7 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.DebugMessage)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.DebugMessage)
   }
 
   public interface ManualMessageOrBuilder
@@ -5813,7 +5813,7 @@ public final class Protocol {
         return com.mar.socket.protocol.Protocol.internal_static_com_taobao_zeus_socket_protocol_ManualMessage_fieldAccessorTable;
       }
 
-      // Construct using com.mar.socket.protocol.Protocol.ManualMessage.newBuilder()
+      // Construct using com.com.mar.socket.protocol.Protocol.ManualMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6012,7 +6012,7 @@ public final class Protocol {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:com.mar.socket.protocol.ManualMessage)
+      // @@protoc_insertion_point(builder_scope:com.com.mar.socket.protocol.ManualMessage)
     }
 
     static {
@@ -6020,7 +6020,7 @@ public final class Protocol {
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:com.mar.socket.protocol.ManualMessage)
+    // @@protoc_insertion_point(class_scope:com.com.mar.socket.protocol.ManualMessage)
   }
 
   private static com.google.protobuf.Descriptors.Descriptor
@@ -6082,28 +6082,28 @@ public final class Protocol {
       descriptor;
   static {
     String[] descriptorData = {
-      "\n\024SocketProtocol.proto\022\037com.mar." +
+      "\n\024SocketProtocol.proto\022\037com.com.mar." +
       "socket.protocol\"\246\001\n\rSocketMessage\022A\n\004kin" +
-      "d\030\001 \002(\01623.com.mar.socket.protoco" +
+      "d\030\001 \002(\01623.com.com.mar.socket.protoco" +
       "l.SocketMessage.Kind\022\014\n\004body\030\002 \001(\014\"D\n\004Ki" +
       "nd\022\013\n\007REQUEST\020\000\022\014\n\010RESPONSE\020\001\022\017\n\013WEB_REU" +
       "QEST\020\002\022\020\n\014WEB_RESPONSE\020\003\"\350\001\n\nWebRequest\022" +
       "\013\n\003rid\030\001 \002(\021\022<\n\007operate\030\002 \002(\0162+.com.taob" +
       "ao.zeus.socket.protocol.WebOperate\0228\n\002ek" +
-      "\030\003 \002(\0162,.com.mar.socket.protocol" +
+      "\030\003 \002(\0162,.com.com.mar.socket.protocol" +
       ".ExecuteKind\022\n\n\002id\030\004 \002(\t\022\020\n\010executor\030\005 \001",
       "(\t\022\014\n\004body\030\006 \001(\014\")\n\007Trigger\022\n\n\006MANUAL\020\000\022" +
       "\022\n\016MANUAL_RECOVER\020\001\"\262\001\n\013WebResponse\0227\n\006s" +
-      "tatus\030\001 \002(\0162\'.com.mar.socket.pro" +
+      "tatus\030\001 \002(\0162\'.com.com.mar.socket.pro" +
       "tocol.Status\022\013\n\003rid\030\002 \002(\021\022<\n\007operate\030\003 \002" +
-      "(\0162+.com.mar.socket.protocol.Web" +
+      "(\0162+.com.com.mar.socket.protocol.Web" +
       "Operate\022\021\n\terrorText\030\004 \001(\t\022\014\n\004body\030\005 \001(\014" +
       "\"_\n\007Request\022\013\n\003rid\030\001 \002(\021\0229\n\007operate\030\002 \002(" +
-      "\0162(.com.mar.socket.protocol.Oper" +
+      "\0162(.com.com.mar.socket.protocol.Oper" +
       "ate\022\014\n\004body\030\003 \001(\014\"\254\001\n\010Response\0227\n\006status" +
-      "\030\001 \002(\0162\'.com.mar.socket.protocol",
+      "\030\001 \002(\0162\'.com.com.mar.socket.protocol",
       ".Status\022\013\n\003rid\030\002 \002(\021\0229\n\007operate\030\003 \002(\0162(." +
-      "com.mar.socket.protocol.Operate\022" +
+      "com.com.mar.socket.protocol.Operate\022" +
       "\021\n\terrorText\030\004 \001(\t\022\014\n\004body\030\005 \001(\014\"\241\001\n\020Hea" +
       "rtBeatMessage\022\020\n\010runnings\030\001 \003(\t\022\025\n\rdebug" +
       "Runnings\030\002 \003(\t\022\026\n\016manualRunnings\030\003 \003(\t\022\021" +
@@ -6111,7 +6111,7 @@ public final class Protocol {
       "ost\030\006 \001(\t\022\031\n\021cpu_load_per_core\030\007 \001(\002\"1\n\016" +
       "ExecuteMessage\022\r\n\005jobId\030\001 \002(\t\022\020\n\010exitCod" +
       "e\030\002 \001(\021\"U\n\rCancelMessage\0228\n\002ek\030\001 \002(\0162,.c" +
-      "om.mar.socket.protocol.ExecuteKi",
+      "om.com.mar.socket.protocol.ExecuteKi",
       "nd\022\n\n\002id\030\002 \002(\t\"1\n\014DebugMessage\022\017\n\007debugI" +
       "d\030\001 \002(\t\022\020\n\010exitCode\030\002 \001(\021\"4\n\rManualMessa" +
       "ge\022\021\n\thistoryId\030\001 \002(\t\022\020\n\010exitCode\030\002 \001(\021*" +
@@ -6121,7 +6121,7 @@ public final class Protocol {
       "\001\022\016\n\nExecuteJob\020\002\022\r\n\tCancelJob\020\003\022\020\n\014Exec" +
       "uteDebug\020\004*I\n\007Operate\022\r\n\tHeartBeat\020\000\022\014\n\010" +
       "Schedule\020\001\022\n\n\006Cancel\020\002\022\t\n\005Debug\020\003\022\n\n\006Man" +
-      "ual\020\004B-\n\037com.mar.socket.protocol",
+      "ual\020\004B-\n\037com.com.mar.socket.protocol",
       "B\010ProtocolH\001"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =

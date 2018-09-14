@@ -7,9 +7,7 @@ import com.mar.store.mysql.persistence.DistributeLock;
 import com.mar.util.Environment;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.hibernate.HibernateException;
-import org.hibernate.Query;
-import org.hibernate.Session;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.orm.hibernate3.HibernateCallback;
@@ -91,7 +89,7 @@ public class DistributeLocker extends HibernateDaoSupport{
 			@Override
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.DistributeLock where subgroup=? order by id desc");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.DistributeLock where subgroup=? order by id desc");
 				query.setParameter(0, Environment.getScheduleGroup());
 				query.setMaxResults(1);
 				DistributeLock lock= (DistributeLock) query.uniqueResult();

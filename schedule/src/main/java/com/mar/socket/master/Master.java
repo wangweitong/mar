@@ -1050,7 +1050,7 @@ public class Master {
                         hiss.add(his);
                     }
                 }
-                /*js.setStatus(com.mar.model.JobStatus.Status.FAILED);
+                /*js.setStatus(com.com.mar.model.JobStatus.Status.FAILED);
                 context.getGroupManager().updateJobStatus(js);*/
             }
             new Thread() {

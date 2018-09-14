@@ -1,14 +1,11 @@
 package com.mar.model.processer;
 
-import java.util.ArrayList;
+import net.sf.json.JSONObject;
+import org.apache.commons.lang.StringUtils;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
-import net.sf.json.JSONObject;
-
-import org.apache.commons.lang.StringUtils;
-
 
 /**
  * @author gufei.wzy

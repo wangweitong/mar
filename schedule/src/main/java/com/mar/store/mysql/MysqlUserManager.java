@@ -26,7 +26,7 @@ public class MysqlUserManager extends HibernateDaoSupport implements UserManager
         return (List<ZeusUser>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException,
                     SQLException {
-                Query query = session.createQuery("from com.mar.store.mysql.persistence.ZeusUser where isEffective=1 ");
+                Query query = session.createQuery("from com.com.mar.store.mysql.persistence.ZeusUser where isEffective=1 ");
                 return query.list();
             }
         });
@@ -50,7 +50,7 @@ public class MysqlUserManager extends HibernateDaoSupport implements UserManager
         List<ZeusUser> list = (List<ZeusUser>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException,
                     SQLException {
-                Query query = session.createQuery("from com.mar.store.mysql.persistence.ZeusUser where uid in (:idList)");
+                Query query = session.createQuery("from com.com.mar.store.mysql.persistence.ZeusUser where uid in (:idList)");
                 query.setParameterList("idList", uids);
                 return query.list();
             }
@@ -64,7 +64,7 @@ public class MysqlUserManager extends HibernateDaoSupport implements UserManager
             @Override
             public Object doInHibernate(Session session) throws HibernateException,
                     SQLException {
-                Query query = session.createQuery("from com.mar.store.mysql.persistence.ZeusUser where uid=?");
+                Query query = session.createQuery("from com.com.mar.store.mysql.persistence.ZeusUser where uid=?");
                 query.setParameter(0, user.getUid());
                 return query.list();
             }
@@ -126,7 +126,7 @@ public class MysqlUserManager extends HibernateDaoSupport implements UserManager
         return (List<ZeusUser>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException,
                     SQLException {
-                Query query = session.createQuery("from com.mar.store.mysql.persistence.ZeusUser order by " + sortField + " " + sortOrder);
+                Query query = session.createQuery("from com.com.mar.store.mysql.persistence.ZeusUser order by " + sortField + " " + sortOrder);
                 return query.list();
             }
         });
@@ -139,7 +139,7 @@ public class MysqlUserManager extends HibernateDaoSupport implements UserManager
         List<ZeusUser> list = (List<ZeusUser>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException,
                     SQLException {
-                Query query = session.createQuery("from com.mar.store.mysql.persistence.ZeusUser " +
+                Query query = session.createQuery("from com.com.mar.store.mysql.persistence.ZeusUser " +
                         "where uid like :uid or name like :name or email like :email order by " + sortField + " " + sortOrder);
                 query.setString("uid", "%" + filter + "%");
                 query.setString("name", "%" + filter + "%");

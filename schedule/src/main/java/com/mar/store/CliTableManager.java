@@ -58,7 +58,7 @@ public class CliTableManager implements TableManager {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see com.mar.store.TableManager#getAllTables()
+	 * @see com.com.mar.store.TableManager#getAllTables()
 	 */
 	@Override
 	public List<String> getAllTables(String dbName) throws ZeusException {
@@ -96,7 +96,7 @@ public class CliTableManager implements TableManager {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see com.mar.store.TableManager#getTable(java.lang.String)
+	 * @see com.com.mar.store.TableManager#getTable(java.lang.String)
 	 */
 	@Override
 	public Table getTable(String dbName, String tableName) {

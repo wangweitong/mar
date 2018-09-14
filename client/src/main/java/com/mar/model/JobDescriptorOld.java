@@ -1,12 +1,12 @@
 package com.mar.model;
 
+import com.mar.model.processer.Processer;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import com.mar.model.processer.Processer;
 
 public class JobDescriptorOld implements Serializable {
 

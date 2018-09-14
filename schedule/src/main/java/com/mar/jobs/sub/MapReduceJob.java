@@ -19,7 +19,7 @@ public class MapReduceJob extends JavaJob{
 		String main=getJavaClass();
 		String args=getMainArguments();
 		String classpath=getClassPaths();
-		jobContext.getProperties().setProperty(RunningJobKeys.RUN_JAVA_MAIN_CLASS, "com.mar.jobs.sub.main.MapReduceMain");
+		jobContext.getProperties().setProperty(RunningJobKeys.RUN_JAVA_MAIN_CLASS, "com.com.mar.jobs.sub.main.MapReduceMain");
 		classpath=getMRClassPath(classpath);
 		jobContext.getProperties().setProperty(RunningJobKeys.RUN_CLASSPATH, classpath+
 				File.pathSeparator+getSourcePathFromClass(MapReduceMain.class));

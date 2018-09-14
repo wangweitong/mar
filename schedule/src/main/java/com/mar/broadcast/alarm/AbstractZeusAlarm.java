@@ -1,7 +1,8 @@
 package com.mar.broadcast.alarm;
 
-import com.mar.model.*;
-
+import com.mar.model.JobHistory;
+import com.mar.model.JobStatus.TriggerType;
+import com.mar.model.ZeusFollow;
 import com.mar.schedule.mvc.JobFailListener.ChainException;
 import com.mar.store.FollowManagerOld;
 import com.mar.store.GroupManagerOld;

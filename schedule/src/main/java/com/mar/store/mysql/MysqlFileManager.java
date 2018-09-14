@@ -55,7 +55,7 @@ public class MysqlFileManager extends HibernateDaoSupport implements
 					public Object doInHibernate(Session session)
 							throws HibernateException, SQLException {
 						Query query = session
-								.createQuery("from com.mar.store.mysql.persistence.FilePersistence where parent=?");
+								.createQuery("from com.com.mar.store.mysql.persistence.FilePersistence where parent=?");
 						query.setParameter(0, Long.valueOf(id));
 						List<FilePersistence> fps = query.list();
 						List<FileDescriptor> list = new ArrayList<FileDescriptor>();
@@ -76,7 +76,7 @@ public class MysqlFileManager extends HibernateDaoSupport implements
 					public Object doInHibernate(Session session)
 							throws HibernateException, SQLException {
 						Query query = session
-								.createQuery("from com.mar.store.mysql.persistence.FilePersistence where owner=? and parent=null");
+								.createQuery("from com.com.mar.store.mysql.persistence.FilePersistence where owner=? and parent=null");
 						query.setParameter(0, uid);
 						List<FilePersistence> list = query.list();
 						if (list == null || list.isEmpty()) {

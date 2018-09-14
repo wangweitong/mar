@@ -30,7 +30,7 @@ public class MysqlFollowManager extends HibernateDaoSupport implements FollowMan
 		List<ZeusFollowPersistence> list= (List<ZeusFollowPersistence>) getHibernateTemplate().execute(new HibernateCallback() {
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.ZeusFollowPersistence where uid=?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.ZeusFollowPersistence where uid=?");
 				query.setParameter(0, uid);
 				return query.list();
 			}
@@ -52,7 +52,7 @@ public class MysqlFollowManager extends HibernateDaoSupport implements FollowMan
 			@Override
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.ZeusFollowPersistence where type="+ZeusFollow.GroupType+" uid=?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.ZeusFollowPersistence where type="+ZeusFollow.GroupType+" uid=?");
 				query.setParameter(0, uid);
 				return query.list();
 			}
@@ -73,7 +73,7 @@ public class MysqlFollowManager extends HibernateDaoSupport implements FollowMan
 			@Override
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.ZeusFollowPersistence where type="+ZeusFollow.JobType+" and uid=?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.ZeusFollowPersistence where type="+ZeusFollow.JobType+" and uid=?");
 				query.setParameter(0, uid);
 				return query.list();
 			}
@@ -92,7 +92,7 @@ public class MysqlFollowManager extends HibernateDaoSupport implements FollowMan
 		List<ZeusFollowPersistence> list=  (List<ZeusFollowPersistence>) getHibernateTemplate().execute(new HibernateCallback() {
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.ZeusFollowPersistence where type="+ZeusFollow.JobType+" and targetId=?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.ZeusFollowPersistence where type="+ZeusFollow.JobType+" and targetId=?");
 				query.setParameter(0, Long.valueOf(jobId));
 				return query.list();
 			}
@@ -118,7 +118,7 @@ public class MysqlFollowManager extends HibernateDaoSupport implements FollowMan
 				for(String group:groupIds){
 					ids.add(Long.valueOf(group));
 				}
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.ZeusFollowPersistence where type="+ZeusFollow.GroupType+" and targetId in (:list)");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.ZeusFollowPersistence where type="+ZeusFollow.GroupType+" and targetId in (:list)");
 				query.setParameterList("list", ids);
 				return query.list();
 			}
@@ -137,7 +137,7 @@ public class MysqlFollowManager extends HibernateDaoSupport implements FollowMan
 		List<ZeusFollowPersistence> list=(List<ZeusFollowPersistence>) getHibernateTemplate().execute(new HibernateCallback() {
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.ZeusFollowPersistence where uid=? and type=? and targetId=?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.ZeusFollowPersistence where uid=? and type=? and targetId=?");
 				query.setParameter(0, uid);
 				query.setParameter(1, type);
 				query.setParameter(2, Long.valueOf(targetId));
@@ -164,7 +164,7 @@ public class MysqlFollowManager extends HibernateDaoSupport implements FollowMan
 		List<ZeusFollowPersistence> list=(List<ZeusFollowPersistence>) getHibernateTemplate().execute(new HibernateCallback() {
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.ZeusFollowPersistence where uid=? and type=? and targetId=?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.ZeusFollowPersistence where uid=? and type=? and targetId=?");
 				query.setParameter(0, uid);
 				query.setParameter(1, type);
 				query.setParameter(2, Long.valueOf(targetId));

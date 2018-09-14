@@ -9,6 +9,12 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 import static com.mar.util.RunningJobKeys.*;
+import static com.mar.util.RunningJobKeys.RUN_CLASSPATH;
+import static com.mar.util.RunningJobKeys.RUN_INITIAL_MEMORY_SIZE;
+import static com.mar.util.RunningJobKeys.RUN_JAVA_MAIN_ARGS;
+import static com.mar.util.RunningJobKeys.RUN_JAVA_MAIN_CLASS;
+import static com.mar.util.RunningJobKeys.RUN_JVM_PARAMS;
+import static com.mar.util.RunningJobKeys.RUN_MAX_MEMORY_SIZE;
 
 /**
  * 代表一个执行java命令行的Job

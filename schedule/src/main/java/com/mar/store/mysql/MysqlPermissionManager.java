@@ -53,7 +53,7 @@ public class MysqlPermissionManager extends HibernateDaoSupport implements Permi
 		return (List<String>) getHibernateTemplate().execute(new HibernateCallback() {
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("select uid from com.mar.store.mysql.persistence.PermissionPersistence where type=? and targetId=?");
+				Query query=session.createQuery("select uid from com.com.mar.store.mysql.persistence.PermissionPersistence where type=? and targetId=?");
 				query.setParameter(0, PermissionPersistence.GROUP_TYPE);
 				query.setParameter(1, Long.valueOf(groupId));
 				return query.list();
@@ -64,7 +64,7 @@ public class MysqlPermissionManager extends HibernateDaoSupport implements Permi
 		return (List<String>) getHibernateTemplate().execute(new HibernateCallback() {
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("select uid from com.mar.store.mysql.persistence.PermissionPersistence where type=? and targetId=?");
+				Query query=session.createQuery("select uid from com.com.mar.store.mysql.persistence.PermissionPersistence where type=? and targetId=?");
 				query.setParameter(0, PermissionPersistence.JOB_TYPE);
 				query.setParameter(1, Long.valueOf(jobId));
 				return query.list();
@@ -76,7 +76,7 @@ public class MysqlPermissionManager extends HibernateDaoSupport implements Permi
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
 		
-				Query query=session.createQuery("select id from com.mar.store.mysql.persistence.JobPersistence where toJobId=" + jobId + " order by id desc");
+				Query query=session.createQuery("select id from com.com.mar.store.mysql.persistence.JobPersistence where toJobId=" + jobId + " order by id desc");
 				return  query.list();
 			}
 		});
@@ -85,7 +85,7 @@ public class MysqlPermissionManager extends HibernateDaoSupport implements Permi
 		List<PermissionPersistence> list=(List<PermissionPersistence>) getHibernateTemplate().execute(new HibernateCallback() {
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.PermissionPersistence where type=? and uid=? and targetId=?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.PermissionPersistence where type=? and uid=? and targetId=?");
 				query.setParameter(0,PermissionPersistence.GROUP_TYPE);
 				query.setParameter(1, user);
 				query.setParameter(2, Long.valueOf(groupId));
@@ -101,7 +101,7 @@ public class MysqlPermissionManager extends HibernateDaoSupport implements Permi
 		List<PermissionPersistence> list=(List<PermissionPersistence>) getHibernateTemplate().execute(new HibernateCallback() {
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.PermissionPersistence where type=? and uid=? and targetId=?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.PermissionPersistence where type=? and uid=? and targetId=?");
 				query.setParameter(0,PermissionPersistence.JOB_TYPE);
 				query.setParameter(1, user);
 				query.setParameter(2, Long.valueOf(jobId));

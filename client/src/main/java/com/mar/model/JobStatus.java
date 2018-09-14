@@ -57,7 +57,7 @@ public class JobStatus implements Serializable{
 			return id;
 		}
 		public static Status parser(String v){
-			for(Status s:Status.values()){
+			for(Status s: Status.values()){
 				if(s.id.equalsIgnoreCase(v)){
 					return s;
 				}
@@ -98,7 +98,7 @@ public class JobStatus implements Serializable{
 			return "未知";
 		}
 		public static TriggerType parser(Integer v){
-			for(TriggerType type:TriggerType.values()){
+			for(TriggerType type: TriggerType.values()){
 				if(type.getId().equals(v)){
 					return type;
 				}

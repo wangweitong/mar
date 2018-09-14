@@ -3,27 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>Ram</artifactId>
-        <groupId>com.ram</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>mar</artifactId>
+        <groupId>com.mar</groupId>
+        <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>schedule</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+
     <packaging>jar</packaging>
-    <name>调度系统内核</name>
-    <description>调度系统</description>
     <dependencies>
         <dependency>
-            <groupId>com.ram</groupId>
+            <groupId>com.mar</groupId>
             <artifactId>client</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
         <dependency>
-            <groupId>com.ram</groupId>
+            <groupId>com.mar</groupId>
             <artifactId>client</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -46,10 +45,10 @@
             <artifactId>hadoop-common</artifactId>
             <version>2.2.0</version>
             <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>org.eclipse.jdt</groupId>-->
-                    <!--<artifactId>core</artifactId>-->
-                <!--</exclusion>-->
+            <!--<exclusion>-->
+            <!--<groupId>org.eclipse.jdt</groupId>-->
+            <!--<artifactId>core</artifactId>-->
+            <!--</exclusion>-->
             <!--</exclusions>-->
         </dependency>
 
@@ -59,9 +58,9 @@
             <version>2.2.0</version>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>org.apache.velocity</groupId>-->
-            <!--<artifactId>velocity</artifactId>-->
-            <!--<version>1.5</version>-->
+        <!--<groupId>org.apache.velocity</groupId>-->
+        <!--<artifactId>velocity</artifactId>-->
+        <!--<version>1.5</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.apache.hive</groupId>
@@ -103,14 +102,14 @@
         </dependency>
 
         <!--<dependency>-->
-            <!--<groupId>javax.jdo</groupId>-->
-            <!--<artifactId>jdo2-api</artifactId>-->
-            <!--<version>2.3-eb</version>-->
+        <!--<groupId>javax.jdo</groupId>-->
+        <!--<artifactId>jdo2-api</artifactId>-->
+        <!--<version>2.3-eb</version>-->
         <!--</dependency>-->
 
         <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring</artifactId>-->
+        <!--<groupId>org.springframework</groupId>-->
+        <!--<artifactId>spring</artifactId>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -153,10 +152,10 @@
         </dependency>
         <!-- -->
         <!--<dependency>-->
-            <!--<groupId>net.sf.json-lib</groupId>-->
-            <!--<artifactId>json-lib</artifactId>-->
-            <!--<version>2.1</version>-->
-            <!--<classifier>jdk15</classifier>-->
+        <!--<groupId>net.sf.json-lib</groupId>-->
+        <!--<artifactId>json-lib</artifactId>-->
+        <!--<version>2.1</version>-->
+        <!--<classifier>jdk15</classifier>-->
         <!--</dependency>-->
         <dependency>
             <groupId>net.sf.json-lib</groupId>
@@ -169,31 +168,31 @@
             <version>1.0.6</version>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate</artifactId>-->
-            <!--<version>3.2.7.ga</version>-->
-            <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>cglib</groupId>-->
-                    <!--<artifactId>cglib</artifactId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
+        <!--<groupId>org.hibernate</groupId>-->
+        <!--<artifactId>hibernate</artifactId>-->
+        <!--<version>3.2.7.ga</version>-->
+        <!--<exclusions>-->
+        <!--<exclusion>-->
+        <!--<groupId>cglib</groupId>-->
+        <!--<artifactId>cglib</artifactId>-->
+        <!--</exclusion>-->
+        <!--</exclusions>-->
         <!--</dependency>-->
         <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate-annotations</artifactId>-->
-            <!--<version>3.4.0.GA</version>-->
-            <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>org.slf4j</groupId>-->
-                    <!--<artifactId>slf4j-api</artifactId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
+        <!--<groupId>org.hibernate</groupId>-->
+        <!--<artifactId>hibernate-annotations</artifactId>-->
+        <!--<version>3.4.0.GA</version>-->
+        <!--<exclusions>-->
+        <!--<exclusion>-->
+        <!--<groupId>org.slf4j</groupId>-->
+        <!--<artifactId>slf4j-api</artifactId>-->
+        <!--</exclusion>-->
+        <!--</exclusions>-->
         <!--</dependency>-->
         <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>ejb3-persistence</artifactId>-->
-            <!--<version>1.0.2.GA</version>-->
+        <!--<groupId>org.hibernate</groupId>-->
+        <!--<artifactId>ejb3-persistence</artifactId>-->
+        <!--<version>1.0.2.GA</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.jboss.javaee</groupId>
@@ -285,9 +284,9 @@
             <version>3.1</version>
         </dependency>
         <dependency>
-            <groupId>com.ram</groupId>
+            <groupId>com.mar</groupId>
             <artifactId>client</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -295,13 +294,14 @@
             <artifactId>spring</artifactId>
             <version>2.5.6</version>
         </dependency>
+
+
         <dependency>
-            <groupId>com.ram</groupId>
+            <groupId>com.mar</groupId>
             <artifactId>client</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
 
 </project>

@@ -24,7 +24,7 @@ public class MysqlJobHistoryManager extends HibernateDaoSupport implements JobHi
 			@Override
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("update com.mar.store.mysql.persistence.JobHistoryPersistence set log=? where id=?");
+				Query query=session.createQuery("update com.com.mar.store.mysql.persistence.JobHistoryPersistence set log=? where id=?");
 				query.setParameter(0, log); 
 				query.setParameter(1, Long.valueOf(id));
 				query.executeUpdate();

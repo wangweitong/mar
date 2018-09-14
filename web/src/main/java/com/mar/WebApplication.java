@@ -1,4 +1,4 @@
-package com.mar.web;
+package com.mar;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,9 +1,9 @@
 package com.mar.model;
 
-import java.util.Date;
-
 import com.mar.model.JobDescriptor.JobRunType;
 import com.mar.model.JobStatus.Status;
+
+import java.util.Date;
 
 public class DebugHistory{
 

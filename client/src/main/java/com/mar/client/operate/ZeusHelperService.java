@@ -1,8 +1,8 @@
 package com.mar.client.operate;
 
-import java.util.Map;
-
 import com.mar.model.JobHistory;
+
+import java.util.Map;
 
 public interface ZeusHelperService {
 	/**

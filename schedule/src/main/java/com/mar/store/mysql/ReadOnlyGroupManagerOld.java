@@ -89,7 +89,7 @@ public class ReadOnlyGroupManagerOld extends HibernateDaoSupport{
 			@Override
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("select id,groupId from com.mar.store.mysql.persistence.JobPersistenceOld where gmt_modified>?");
+				Query query=session.createQuery("select id,groupId from com.com.mar.store.mysql.persistence.JobPersistenceOld where gmt_modified>?");
 				query.setDate(0, ignoreContentJobJudge.lastModified);
 				List<Object[]> list=query.list();
 				List<JobDescriptorOld> result=new ArrayList<JobDescriptorOld>();
@@ -140,7 +140,7 @@ public class ReadOnlyGroupManagerOld extends HibernateDaoSupport{
 			@Override
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.GroupPersistence where gmt_modified>?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.GroupPersistence where gmt_modified>?");
 				query.setDate(0, ignoreContentGroupJudge.lastModified);
 				List<GroupPersistence> list=query.list();
 				List<GroupDescriptor> result=new ArrayList<GroupDescriptor>();

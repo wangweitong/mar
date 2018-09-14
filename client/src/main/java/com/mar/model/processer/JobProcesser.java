@@ -1,10 +1,10 @@
 package com.mar.model.processer;
 
+import net.sf.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-import net.sf.json.JSONObject;
 
 /**
  * 可以将其他Job作为一个Processer处理单元，嵌入到当前Job中

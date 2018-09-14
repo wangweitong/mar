@@ -208,7 +208,7 @@ public class MysqlGroupManagerOld extends HibernateDaoSupport implements
 			public Object doInHibernate(Session session)
 					throws HibernateException, SQLException {
 				Query query = session
-						.createQuery("from com.mar.store.mysql.persistence.GroupPersistence g order by g.id asc");
+						.createQuery("from com.com.mar.store.mysql.persistence.GroupPersistence g order by g.id asc");
 				query.setMaxResults(1);
 				List<GroupPersistence> list = query.list();
 				if (list == null || list.size() == 0) {
@@ -388,7 +388,7 @@ public class MysqlGroupManagerOld extends HibernateDaoSupport implements
 							ids.add(Long.valueOf(i));
 						}
 						Query query = session
-								.createQuery("from com.mar.store.mysql.persistence.JobPersistenceOld where id in (:list)");
+								.createQuery("from com.com.mar.store.mysql.persistence.JobPersistenceOld where id in (:list)");
 						query.setParameterList("list", ids);
 						List<JobPersistenceOld> list = query.list();
 						List<Tuple<JobDescriptorOld, JobStatus>> result = new ArrayList<Tuple<JobDescriptorOld, JobStatus>>();
@@ -428,7 +428,7 @@ public class MysqlGroupManagerOld extends HibernateDaoSupport implements
 							return Collections.emptyList();
 						}
 						Query query = session
-								.createQuery("from com.mar.store.mysql.persistence.JobPersistenceOld where id in (:list)");
+								.createQuery("from com.com.mar.store.mysql.persistence.JobPersistenceOld where id in (:list)");
 						query.setParameterList("list", ids);
 						List<JobPersistenceOld> list = query.list();
 						List<JobDescriptorOld> result = new ArrayList<JobDescriptorOld>();
@@ -515,7 +515,7 @@ public class MysqlGroupManagerOld extends HibernateDaoSupport implements
 					public Object doInHibernate(Session session)
 							throws HibernateException, SQLException {
 						Query query = session
-								.createQuery("select host from com.mar.store.mysql.persistence.Worker");
+								.createQuery("select host from com.com.mar.store.mysql.persistence.Worker");
 						return query.list();
 					}
 				});

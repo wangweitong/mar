@@ -13,11 +13,11 @@ public interface ZeusGroupService {
 	 * @return
 	 * @throws ZeusException
 	 */
-	public GroupDescriptor createGroup(String user,String groupName,String parentGroup,boolean isDirectory) throws ZeusException;
-	
-	public void updateGroup(String uid,GroupDescriptor groupDescriptor) throws ZeusException;
-	
-	public void deleteGroup(String uid,String groupId) throws ZeusException;
+	public GroupDescriptor createGroup(String user, String groupName, String parentGroup, boolean isDirectory) throws ZeusException;
+
+	public void updateGroup(String uid, GroupDescriptor groupDescriptor) throws ZeusException;
+
+	public void deleteGroup(String uid, String groupId) throws ZeusException;
 	
 	public GroupDescriptor getGroupDescriptor(String groupId);
 }

@@ -4,13 +4,14 @@ import com.mar.model.JobDescriptor;
 import com.mar.model.JobStatus;
 import com.mar.store.GroupManager;
 import com.mar.util.Tuple;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.Logger;
+
+import parquet.org.slf4j.LoggerFactory;
 
 import java.util.Date;
 
 public class CacheJobDescriptor {
-	private static Logger log=LoggerFactory.getLogger(CacheJobDescriptor.class);
+	private static parquet.org.slf4j.Logger log=LoggerFactory.getLogger(CacheJobDescriptor.class);
 	private GroupManager groupManager;
 	
 	private final String jobId;

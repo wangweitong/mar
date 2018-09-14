@@ -26,7 +26,7 @@ public class MysqlHostGroupManager extends HibernateDaoSupport implements HostGr
 			@Override
 			public Object doInHibernate(Session session)
 					throws HibernateException, SQLException {
-				Query query = session.createQuery("from com.mar.store.mysql.persistence.HostRelationPersistence");
+				Query query = session.createQuery("from com.com.mar.store.mysql.persistence.HostRelationPersistence");
 				return query.list();
 			}
 			
@@ -39,7 +39,7 @@ public class MysqlHostGroupManager extends HibernateDaoSupport implements HostGr
 			@Override
 			public Object doInHibernate(Session session)
 					throws HibernateException, SQLException {
-				Query query = session.createQuery("from com.mar.store.mysql.persistence.HostRelationPersistence where hostGroupId=" + hostGroupId);
+				Query query = session.createQuery("from com.com.mar.store.mysql.persistence.HostRelationPersistence where hostGroupId=" + hostGroupId);
 				return query.list();
 			}
 			
@@ -80,7 +80,7 @@ public class MysqlHostGroupManager extends HibernateDaoSupport implements HostGr
 			@Override
 			public Object doInHibernate(Session session)
 					throws HibernateException, SQLException {
-				Query query = session.createQuery("from com.mar.store.mysql.persistence.HostGroupPersistence");
+				Query query = session.createQuery("from com.com.mar.store.mysql.persistence.HostGroupPersistence");
 				return query.list();
 			}
 			

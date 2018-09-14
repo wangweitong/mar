@@ -21,7 +21,7 @@ public class MysqlProfileManager extends HibernateDaoSupport implements ProfileM
 		return (Profile) getHibernateTemplate().execute(new HibernateCallback() {
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("from com.mar.store.mysql.persistence.ProfilePersistence where uid=?");
+				Query query=session.createQuery("from com.com.mar.store.mysql.persistence.ProfilePersistence where uid=?");
 				query.setParameter(0, uid);
 				List<ProfilePersistence> list=query.list();
 				if(!list.isEmpty()){

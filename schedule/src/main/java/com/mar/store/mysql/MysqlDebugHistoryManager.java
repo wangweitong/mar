@@ -39,7 +39,7 @@ public class MysqlDebugHistoryManager extends HibernateDaoSupport implements Deb
 			@Override
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("select id,fileId,startTime,endTime,executeHost,status,script,log,owner from com.mar.store.mysql.persistence.DebugHistoryPersistence" +
+				Query query=session.createQuery("select id,fileId,startTime,endTime,executeHost,status,script,log,owner from com.com.mar.store.mysql.persistence.DebugHistoryPersistence" +
 						" where fileId=? order by id desc");
 				query.setParameter(0, Long.valueOf(fileId));
 				query.setMaxResults(limit);
@@ -89,7 +89,7 @@ public class MysqlDebugHistoryManager extends HibernateDaoSupport implements Deb
 			@Override
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {
-				Query query=session.createQuery("update com.mar.store.mysql.persistence.DebugHistoryPersistence set log=? where id=?");
+				Query query=session.createQuery("update com.com.mar.store.mysql.persistence.DebugHistoryPersistence set log=? where id=?");
 				query.setParameter(0, log); 
 				query.setParameter(1, Long.valueOf(id));
 				query.executeUpdate();

@@ -3,16 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>Ram</artifactId>
-        <groupId>com.ram</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>mar</artifactId>
+        <groupId>com.mar</groupId>
+        <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mar</groupId>
     <artifactId>client</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
-    <name>调度系统客户端</name>
-    <description>调度系统</description>
     <dependencies>
         <dependency>
             <groupId>commons-lang</groupId>
@@ -26,6 +25,5 @@
             <classifier>jdk15</classifier>
         </dependency>
     </dependencies>
-
 
 </project>
